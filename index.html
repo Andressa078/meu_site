@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andressa Ribeiro</title>
+
+  <!-- Fontes exatas do Figma -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Lexend+Exa:wght@400&family=Secular+One&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- FUNDO bg.png -->
+  <div class="fundo-bg">
+    <img src="images/bg.png" alt="" />
+  </div>
+
+  <!-- ============================================
+       SEÇÃO 1 — SOBRE MIM
+  ============================================= -->
+  <section class="sobre-mim">
+
+    <!-- TAG "SOBRE MIM" — SVG exato do Figma -->
+    <div class="sobre-tag">
+      <div class="tag-svg-wrapper">
+        <svg width="401" height="132" viewBox="0 0 401 132" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_f_4_9)">
+            <path d="M328.192 34.8528L-6.53133 34.0666C-22.1806 34.0298
+                     -34.8967 46.6863 -34.9334 62.3356C-34.9702 77.9849
+                     -22.3137 90.7009 -6.66444 90.7377L355.281 91.5879C
+                     357.92 91.5941 360.064 89.46 360.07 86.8213L360.117
+                     66.9279C360.158 49.2548 345.865 34.8943 328.192
+                     34.8528Z" fill="#22007C"/>
+          </g>
+          <defs>
+            <filter id="filter0_f_4_9" x="-74.9335" y="-5.93352"
+                    width="475.05" height="137.521"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feBlend mode="normal" in="SourceGraphic"
+                       in2="BackgroundImageFix" result="shape"/>
+              <feGaussianBlur stdDeviation="20"
+                              result="effect1_foregroundBlur_4_9"/>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <!-- font-size: 24px, Krona One, weight 400 — valores do Figma -->
+      <span class="tag-texto">SOBRE MIM</span>
+    </div>
+
+    <!-- CONTEÚDO: nome + bio + botão  |  foto -->
+    <div class="sobre-conteudo">
+
+      <div class="sobre-textos">
+        <!-- width: 867px, font-size: 55px, Krona One -->
+        <h1>ANDRESSA RIBEIRO</h1>
+
+        <!-- width: 600px, height: 153px, Lexend Exa 15px -->
+        <p class="bio">
+          Estudante de Engenharia de Software focada em dar vida a
+          ideias através do desenvolvimento de sites. Com sólida base em
+          <span class="destaque">HTML</span>,
+          <span class="destaque">Python</span> e
+          <span class="destaque">SQL</span>,
+          busco criar plataformas web que sejam tanto visualmente
+          atraentes quanto estruturalmente robustas. Dedicada a aprender
+          continuamente e a transformar desafios em código limpo e eficiente.
+        </p>
+
+        <!-- Botão: Secular One 20px, bg #22007C, border-radius 24px,
+             width 198px height 52px — valores do Figma -->
+        <a href="https://wa.me/5511948154759"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn-contato">CONTATO</a>
+      </div>
+
+      <!-- Foto: 492.77px × 478.49px, rotate(-14deg),
+           box-shadow 0px 4px 50px 5px #673AB7,
+           border 3.5px #673AB7 — valores do Figma -->
+      <div class="sobre-foto">
+        <img src="images/foto.png" alt="Andressa Ribeiro" />
+      </div>
+
+    </div>
+
+    <!-- ÍCONES TECH: círculos rgba(34,0,124,0.65)
+         width 76.70px height 71px — valores do Figma -->
+    <div class="icones-tech">
+      <div class="icone-circulo">
+        <img src="images/icon_py.png" alt="Python" />
+      </div>
+      <div class="icone-circulo">
+        <img src="images/icon_html.png" alt="HTML5" />
+      </div>
+      <div class="icone-circulo">
+        <img src="images/icon_sql.png" alt="SQL" />
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================
+       SEÇÃO 2 — PROJETOS (CARROSSEL)
+  ============================================= -->
+  <section class="projetos">
+
+    <!-- font: Spy Agency Expanded Italic 48px,
+         letter-spacing 2.4px,
+         text-shadow 0px 4px 20px #976CE3 — Figma -->
+    <h2 class="titulo-projetos">PROJETOS</h2>
+
+    <div class="carrossel">
+
+      <!-- Seta esquerda: círculo 75px #22007C border-radius 39px -->
+      <button class="seta seta-esq" onclick="mudarSlide(-1)" aria-label="Anterior">&#9664;</button>
+
+      <!-- Slides — mockup: 420.99px × 867.72px no Figma,
+           reduzimos proporcionalmente para caber na tela -->
+      <div class="slides-area">
+
+        <div class="slide ativo">
+          <img src="images/frame_1_celular.png" alt="App LARA — Tela Inicial" />
+        </div>
+        <div class="slide">
+          <img src="images/frame_2_celular.png" alt="App LARA — Chat" />
+        </div>
+        <div class="slide">
+          <img src="images/frame_3_celular.png" alt="App LARA — Recompensas" />
+        </div>
+
+      </div>
+
+      <!-- Seta direita -->
+      <button class="seta seta-dir" onclick="mudarSlide(1)" aria-label="Próximo">&#9654;</button>
+
+    </div>
+
+    <!-- Bolinhas indicadoras -->
+    <div class="indicadores">
+      <span class="ponto ativo" onclick="irParaSlide(0)"></span>
+      <span class="ponto"       onclick="irParaSlide(1)"></span>
+      <span class="ponto"       onclick="irParaSlide(2)"></span>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================
+       SEÇÃO 3 — HABILIDADES
+  ============================================= -->
+  <section class="habilidades">
+
+    <!-- Krona One 36px, text-shadow 0px 4px 30px #976CE3 — Figma -->
+    <h3 class="titulo-hab">HABILIDADES</h3>
+
+    <!-- Tags: width 303px height 56px, bg #22007C,
+         box-shadow 0px 4px 30px #673AB7,
+         border-radius 29.5px, outline 1px #976CE3
+         texto: Lexend Exa 24px — Figma -->
+    <div class="grade-hab">
+      <span class="tag-hab">Criação de Sites</span>
+      <span class="tag-hab">Banco de Dados</span>
+      <span class="tag-hab">Designs Criativos</span>
+      <span class="tag-hab">Artes Digitais</span>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================
+       SEÇÃO 4 — SOFTWARE SKILLS
+  ============================================= -->
+  <section class="software-skills">
+
+    <!-- Krona One 36px — Figma -->
+    <h3 class="titulo-soft">SOFTWARE SKILLS</h3>
+
+    <div class="icones-soft-wrapper">
+      <!-- Linha 1: ícones 95×92px (Ps, Ai, Figma, MySQL) -->
+      <div class="icones-soft">
+        <img src="images/icon_ps.png"    alt="Photoshop"   />
+        <img src="images/icon_ai.png"    alt="Illustrator" />
+        <img src="images/icon_figma.png" alt="Figma"       />
+        <img src="images/icon_sql.png"   alt="MySQL"       />
+      </div>
+      <!-- Linha 2: Python, HTML -->
+      <div class="icones-soft">
+        <img src="images/icon_py.png"   alt="Python" />
+        <img src="images/icon_html.png" alt="HTML5"  />
+      </div>
+    </div>
+
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
