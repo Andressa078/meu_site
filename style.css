@@ -131,17 +131,14 @@ h1 {
   margin-bottom: 32px;
 }
 
-/* HTML, Python, SQL — branco com sublinhado roxo para destacar em qualquer fundo */
+
+/* HTML, Python, SQL — roxo claro visível em qualquer fundo */
 .destaque {
-  color: #ffffff;
+  color: #b388ff;
   font-family: 'Lexend Exa', sans-serif;
   font-size: 15px;
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-color: #b388ff;
-  text-underline-offset: 3px;
+  font-weight: 400;
 }
-
 /* --- BOTÃO CONTATO ---
    Figma: width 198px, height 52px, bg #22007C,
    border-radius 24px, border 1px #22007C,
